@@ -10,11 +10,11 @@
 		755343F3269664B000709080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755343F2269664B000709080 /* AppDelegate.swift */; };
 		755343F5269664B000709080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755343F4269664B000709080 /* SceneDelegate.swift */; };
 		755343F7269664B000709080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755343F6269664B000709080 /* ViewController.swift */; };
-		755343FA269664B000709080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755343F8269664B000709080 /* Main.storyboard */; };
 		755343FC269664B400709080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755343FB269664B400709080 /* Assets.xcassets */; };
 		755343FF269664B400709080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755343FD269664B400709080 /* LaunchScreen.storyboard */; };
 		7553440A269664B500709080 /* ChatterBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75534409269664B500709080 /* ChatterBoxTests.swift */; };
 		75534414269664B500709080 /* ChatterBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75534413269664B500709080 /* ChatterBoxUITests.swift */; };
+		755344212696691B00709080 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755344202696691B00709080 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		755343F2269664B000709080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		755343F4269664B000709080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		755343F6269664B000709080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		755343F9269664B000709080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		755343FB269664B400709080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		755343FE269664B400709080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75534400269664B400709080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		75534409269664B500709080 /* ChatterBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatterBoxTests.swift; sourceTree = "<group>"; };
 		7553440F269664B500709080 /* ChatterBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatterBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75534413269664B500709080 /* ChatterBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatterBoxUITests.swift; sourceTree = "<group>"; };
+		755344202696691B00709080 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,7 @@
 				755343F0269664B000709080 /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		755343F0269664B000709080 /* Products */ = {
 			isa = PBXGroup;
@@ -100,8 +101,8 @@
 				755343F2269664B000709080 /* AppDelegate.swift */,
 				755343F4269664B000709080 /* SceneDelegate.swift */,
 				755343F6269664B000709080 /* ViewController.swift */,
-				755343F8269664B000709080 /* Main.storyboard */,
 				755343FB269664B400709080 /* Assets.xcassets */,
+				755344202696691B00709080 /* Welcome.storyboard */,
 				755343FD269664B400709080 /* LaunchScreen.storyboard */,
 				75534400269664B400709080 /* Info.plist */,
 			);
@@ -229,8 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				755343FF269664B400709080 /* LaunchScreen.storyboard in Resources */,
+				755344212696691B00709080 /* Welcome.storyboard in Resources */,
 				755343FC269664B400709080 /* Assets.xcassets in Resources */,
-				755343FA269664B000709080 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +294,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		755343F8269664B000709080 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				755343F9269664B000709080 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		755343FD269664B400709080 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,9 +431,12 @@
 				DEVELOPMENT_TEAM = QFQW29JWKY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatterBox/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = ChatterBox;
+				INFOPLIST_KEY_CFBundleName = ChatterBox;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,9 +462,12 @@
 				DEVELOPMENT_TEAM = QFQW29JWKY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatterBox/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = ChatterBox;
+				INFOPLIST_KEY_CFBundleName = ChatterBox;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
