@@ -65,6 +65,15 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="createAccountButton" destination="AbY-Yh-mJ1" id="WM2-Lg-uDa"/>
+                        <outlet property="orLabel" destination="DeC-5z-6lC" id="Fjb-M4-WTA"/>
+                        <outlet property="signinEmailButton" destination="D7q-KW-EzI" id="5Fu-nE-J6H"/>
+                        <outlet property="signinFacebookButton" destination="ENK-oZ-OXd" id="vJI-Go-UbQ"/>
+                        <outlet property="signinGoogleButton" destination="mxz-Di-ttV" id="Zhp-yn-vn2"/>
+                        <outlet property="termsOfServiceLabel" destination="Z8B-KC-9Hl" id="i5L-rd-prV"/>
+                        <outlet property="titleLabel" destination="9hR-Ly-sgC" id="RfE-Vo-VAv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
