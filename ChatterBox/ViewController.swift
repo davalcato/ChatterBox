@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     // Declare the method
     func setupUI() {
         let title = "Create a new account"
-        let subTitle = "If using a storyboard, the `window` property will automatically be initia"
+        let subTitle = "\n\n\n\n\n\nIf using a storyboard, the `window` property will automatically be initia"
         
         let attributedText = NSMutableAttributedString(
             string: title, attributes:
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         let paragrapStyle = NSMutableParagraphStyle()
         // Set line spacing
         paragrapStyle.lineSpacing = 5
-        
+
         // Add paragrapher
         attributedText.addAttribute(NSAttributedString.Key.paragraphStyle,
                                     value: paragrapStyle, range: NSMakeRange(0, attributedText.length))
