@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         termsOfServiceLabel.attributedText = attributedTermsText
         termsOfServiceLabel.numberOfLines = 0
         
-        // Set the title
+        // Set Facebook
         signInFacebookButton.setTitle("SignUp with Facebook", for: UIControl.State.normal)
         signInFacebookButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
       
@@ -86,21 +86,40 @@ class ViewController: UIViewController {
         signInFacebookButton.backgroundColor = .blue
         
         
-        // Set the title
-        signInPhoneNumberButton.setTitle("SignUp with Email Address", for: UIControl.State.normal)
+        // Set phone number button
+        signInPhoneNumberButton.setTitle("SignUp with Phone Number", for: UIControl.State.normal)
         signInPhoneNumberButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
       
         signInPhoneNumberButton.layer.cornerRadius = 7
         signInPhoneNumberButton.clipsToBounds = true
-        
       
         signInPhoneNumberButton.setImage(tintedImage, for: .normal)
-        signInPhoneNumberButton.backgroundColor = .blue
+        signInPhoneNumberButton.backgroundColor = .red
         
         signInPhoneNumberButton.setImage(UIImage(named: "phone"), for: .normal)
-
+        
+        // Set email
+        signInEmailButton.setTitle("SignUp with Email", for: UIControl.State.normal)
+        signInEmailButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+      
+        signInEmailButton.layer.cornerRadius = 7
+        signInEmailButton.clipsToBounds = true
+        
+        signInEmailButton.setImage(tintedImage, for: .normal)
+        signInEmailButton.backgroundColor = .green
+        
+        signInEmailButton.setImage(UIImage(named: "email"), for: .normal)
+        
+        // Set create account
+        createAccountButton.setTitle("Create a new account", for: UIControl.State.normal)
+        createAccountButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+      
+        createAccountButton.layer.cornerRadius = 7
+        createAccountButton.clipsToBounds = true
+        
+        createAccountButton.backgroundColor = .black
+        
     }
-
 
 }
 
