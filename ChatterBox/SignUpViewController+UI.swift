@@ -25,12 +25,20 @@ extension SignUpViewController {
         
     }
     func setupAvatar() {
-        
+        // UI circular
+        avatar.layer.cornerRadius = 40
+        avatar.clipsToBounds = true
         
         
     }
     func setupFullNameTextField() {
-        
+        // Has border
+        fullnameContainerView.layer.borderWidth = 1
+        fullnameContainerView.layer.borderColor = UIColor(
+            red: 210/255,
+            green: 210/255,
+            blue: 210/255,
+            alpha: 1).cgColor
         
     }
     func setupEmailTextField() {
