@@ -17,6 +17,7 @@
 		755344212696691B00709080 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755344202696691B00709080 /* Welcome.storyboard */; };
 		7598D758269B7E7C00731D50 /* ViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D757269B7E7C00731D50 /* ViewController+UI.swift */; };
 		7598D75A269B89B000731D50 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D759269B89B000731D50 /* SignUpViewController.swift */; };
+		7598D75C269B993300731D50 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D75B269B993300731D50 /* SignUpViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		755344202696691B00709080 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		7598D757269B7E7C00731D50 /* ViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UI.swift"; sourceTree = "<group>"; };
 		7598D759269B89B000731D50 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7598D75B269B993300731D50 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +108,12 @@
 				755343F4269664B000709080 /* SceneDelegate.swift */,
 				755343F6269664B000709080 /* ViewController.swift */,
 				7598D759269B89B000731D50 /* SignUpViewController.swift */,
+				7598D75B269B993300731D50 /* SignUpViewController+UI.swift */,
+				7598D757269B7E7C00731D50 /* ViewController+UI.swift */,
 				755343FB269664B400709080 /* Assets.xcassets */,
 				755344202696691B00709080 /* Welcome.storyboard */,
 				755343FD269664B400709080 /* LaunchScreen.storyboard */,
 				75534400269664B400709080 /* Info.plist */,
-				7598D757269B7E7C00731D50 /* ViewController+UI.swift */,
 			);
 			path = ChatterBox;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7598D75C269B993300731D50 /* SignUpViewController+UI.swift in Sources */,
 				755343F7269664B000709080 /* ViewController.swift in Sources */,
 				755343F3269664B000709080 /* AppDelegate.swift in Sources */,
 				7598D758269B7E7C00731D50 /* ViewController+UI.swift in Sources */,

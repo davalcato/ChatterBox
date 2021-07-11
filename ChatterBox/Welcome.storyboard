@@ -243,6 +243,18 @@
                             <constraint firstItem="jbt-Zb-Ajo" firstAttribute="leading" secondItem="zDU-MO-C7m" secondAttribute="leading" constant="20" id="xAU-yp-6iY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatar" destination="6Tv-Rs-Zff" id="UAI-gS-MPe"/>
+                        <outlet property="emailContainerView" destination="8cP-1i-OCC" id="BRG-kM-JuA"/>
+                        <outlet property="emailTextField" destination="FQx-Bd-gQu" id="mkS-Iy-al1"/>
+                        <outlet property="fullnameContainerView" destination="bWQ-5h-nGP" id="usv-6t-bP3"/>
+                        <outlet property="fullnameTextField" destination="0es-Sy-3jy" id="T1B-9L-e6r"/>
+                        <outlet property="passwordContainerView" destination="hEV-nB-6zS" id="KEK-Et-RQj"/>
+                        <outlet property="passwordTextField" destination="0es-Sy-3jy" id="cYv-Mj-6Ue"/>
+                        <outlet property="signInButton" destination="3oY-8Y-4L2" id="6jn-QE-jWX"/>
+                        <outlet property="signUpButton" destination="1Mi-fi-iO5" id="XfM-3x-x9x"/>
+                        <outlet property="titleTextLabel" destination="EHI-Vs-Nrf" id="hBa-1l-DJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RB4-tR-q3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
