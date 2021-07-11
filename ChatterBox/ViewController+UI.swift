@@ -90,8 +90,9 @@ extension ViewController {
     func setupTermsLabel() {
         
         let attributedTermsText = NSMutableAttributedString(
-            string: "By clicking Create a new account you agree to our Terms of service ", attributes:
-                [NSAttributedString.Key.font : UIFont.init(name: "Didot", size: 14)!,
+            string: "By clicking 'Create a new account' you agree to our Terms of service ",
+            attributes: [NSAttributedString.Key.font :
+                            UIFont.systemFont(ofSize: 14),
                  NSAttributedString.Key.foregroundColor : UIColor(white: 0,
                                                                   alpha: 0.65)
                 ])
@@ -114,10 +115,8 @@ extension ViewController {
         // Set create account
         createAccountButton.setTitle("Create a new account", for: UIControl.State.normal)
         createAccountButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-      
         createAccountButton.layer.cornerRadius = 7
         createAccountButton.clipsToBounds = true
-        
         createAccountButton.backgroundColor = .black
         
     }

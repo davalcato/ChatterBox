@@ -169,7 +169,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Lhs-IL-W6O"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -189,7 +189,7 @@
                                             <constraint firstAttribute="height" constant="40" id="fbw-RP-8cv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -250,7 +250,7 @@
                         <outlet property="fullnameContainerView" destination="bWQ-5h-nGP" id="usv-6t-bP3"/>
                         <outlet property="fullnameTextField" destination="0es-Sy-3jy" id="T1B-9L-e6r"/>
                         <outlet property="passwordContainerView" destination="hEV-nB-6zS" id="KEK-Et-RQj"/>
-                        <outlet property="passwordTextField" destination="0es-Sy-3jy" id="cYv-Mj-6Ue"/>
+                        <outlet property="passwordTextField" destination="OKu-A1-SqV" id="pwK-tA-ST1"/>
                         <outlet property="signInButton" destination="3oY-8Y-4L2" id="6jn-QE-jWX"/>
                         <outlet property="signUpButton" destination="1Mi-fi-iO5" id="XfM-3x-x9x"/>
                         <outlet property="titleTextLabel" destination="EHI-Vs-Nrf" id="hBa-1l-DJW"/>
