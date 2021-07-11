@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="60" id="QwV-2Q-FX0"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Email Address">
+                                <buttonConfiguration key="configuration" style="plain" title="Continue with Facebook">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="height" constant="60" id="euA-pD-HmO"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Continue with Facebook">
+                                <buttonConfiguration key="configuration" style="plain" title="Email Address">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
@@ -99,9 +99,9 @@
                     </view>
                     <connections>
                         <outlet property="createAccountButton" destination="AbY-Yh-mJ1" id="WM2-Lg-uDa"/>
-                        <outlet property="signinEmailButton" destination="D7q-KW-EzI" id="5Fu-nE-J6H"/>
-                        <outlet property="signinFacebookButton" destination="ENK-oZ-OXd" id="vJI-Go-UbQ"/>
-                        <outlet property="signinGoogleButton" destination="mxz-Di-ttV" id="Zhp-yn-vn2"/>
+                        <outlet property="signInEmailButton" destination="D7q-KW-EzI" id="5Fu-nE-J6H"/>
+                        <outlet property="signInFacebookButton" destination="ENK-oZ-OXd" id="vJI-Go-UbQ"/>
+                        <outlet property="signInPhoneNumberButton" destination="mxz-Di-ttV" id="Zhp-yn-vn2"/>
                         <outlet property="termsOfServiceLabel" destination="Z8B-KC-9Hl" id="i5L-rd-prV"/>
                         <outlet property="titleLabel" destination="9hR-Ly-sgC" id="RfE-Vo-VAv"/>
                     </connections>

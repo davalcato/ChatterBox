@@ -10,13 +10,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var signinFacebookButton: UIButton!
-    @IBOutlet weak var signinGoogleButton: UIButton!
-    @IBOutlet weak var signinEmailButton: UIButton!
+    @IBOutlet weak var signInFacebookButton: UIButton!
+    @IBOutlet weak var signInPhoneNumberButton: UIButton!
+    @IBOutlet weak var signInEmailButton: UIButton!
     @IBOutlet weak var createAccountButton: UIButton!
     
-    
-    @IBOutlet weak var orLabel: UILabel!
     @IBOutlet weak var termsOfServiceLabel: UILabel!
     
     override func viewDidLoad() {
@@ -57,6 +55,50 @@ class ViewController: UIViewController {
         
         titleLabel.attributedText = attributedText
         
+        let attributedTermsText = NSMutableAttributedString(
+            string: "By clicking Create a new account you agree to our Terms of service ", attributes:
+                [NSAttributedString.Key.font : UIFont.init(name: "Didot", size: 14)!,
+                 NSAttributedString.Key.foregroundColor : UIColor(white: 0,
+                                                                  alpha: 0.65)
+                ])
+        
+        let attributedSubTermsText = NSMutableAttributedString(
+            string: "Terms of service", attributes:
+                [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14),
+                 NSAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.65)
+                ])
+        attributedSubTermsText.append(attributedSubTermsText)
+        
+        termsOfServiceLabel.attributedText = attributedTermsText
+        termsOfServiceLabel.numberOfLines = 0
+        
+        // Set the title
+        signInFacebookButton.setTitle("SignUp with Facebook", for: UIControl.State.normal)
+        signInFacebookButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+      
+        signInFacebookButton.layer.cornerRadius = 7
+        signInFacebookButton.clipsToBounds = true
+
+        // Add icon
+        let origImage = UIImage(named: "facebook")
+        let tintedImage = origImage?.withRenderingMode(.alwaysTemplate)
+        signInFacebookButton.setImage(tintedImage, for: .normal)
+        signInFacebookButton.backgroundColor = .blue
+        
+        
+        // Set the title
+        signInPhoneNumberButton.setTitle("SignUp with Email Address", for: UIControl.State.normal)
+        signInPhoneNumberButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+      
+        signInPhoneNumberButton.layer.cornerRadius = 7
+        signInPhoneNumberButton.clipsToBounds = true
+        
+      
+        signInPhoneNumberButton.setImage(tintedImage, for: .normal)
+        signInPhoneNumberButton.backgroundColor = .blue
+        
+        signInPhoneNumberButton.setImage(UIImage(named: "phone"), for: .normal)
+
     }
 
 
