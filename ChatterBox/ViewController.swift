@@ -29,7 +29,8 @@ class ViewController: UIViewController {
         setupHeaderTitle()
         setupTermsLabel()
         setupFacebookButton()
-        setupCreateAccountButton()
+        setupPhoneNumberButton()
+        setupEmailButton()
         setupCreateAccountButton()
         
     }
