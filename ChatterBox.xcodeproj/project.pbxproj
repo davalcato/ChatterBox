@@ -15,6 +15,7 @@
 		7553440A269664B500709080 /* ChatterBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75534409269664B500709080 /* ChatterBoxTests.swift */; };
 		75534414269664B500709080 /* ChatterBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75534413269664B500709080 /* ChatterBoxUITests.swift */; };
 		755344212696691B00709080 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755344202696691B00709080 /* Welcome.storyboard */; };
+		7598D758269B7E7C00731D50 /* ViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D757269B7E7C00731D50 /* ViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7553440F269664B500709080 /* ChatterBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatterBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75534413269664B500709080 /* ChatterBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatterBoxUITests.swift; sourceTree = "<group>"; };
 		755344202696691B00709080 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		7598D757269B7E7C00731D50 /* ViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				755344202696691B00709080 /* Welcome.storyboard */,
 				755343FD269664B400709080 /* LaunchScreen.storyboard */,
 				75534400269664B400709080 /* Info.plist */,
+				7598D757269B7E7C00731D50 /* ViewController+UI.swift */,
 			);
 			path = ChatterBox;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				755343F7269664B000709080 /* ViewController.swift in Sources */,
 				755343F3269664B000709080 /* AppDelegate.swift in Sources */,
+				7598D758269B7E7C00731D50 /* ViewController+UI.swift in Sources */,
 				755343F5269664B000709080 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
