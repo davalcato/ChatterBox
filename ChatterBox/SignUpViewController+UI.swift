@@ -32,13 +32,29 @@ extension SignUpViewController {
         
     }
     func setupFullNameTextField() {
-        // Has border
+    // Has border
         fullnameContainerView.layer.borderWidth = 1
         fullnameContainerView.layer.borderColor = UIColor(
             red: 210/255,
             green: 210/255,
             blue: 210/255,
             alpha: 1).cgColor
+        fullnameContainerView.layer.cornerRadius = 3
+        fullnameContainerView.clipsToBounds = true
+        
+        fullnameTextField.borderStyle = .none
+        
+    // Name placeholder
+        let placeholderAttr = NSAttributedString(
+            string: "Full Name",
+            attributes: [NSAttributedString.Key.foregroundColor : UIColor(
+                red: 170/255,
+                green: 170/255,
+                blue: 170/255,
+                alpha: 1)])
+        
+        // attributedString
+        fullnameTextField.attributedPlaceholder = placeholderAttr
         
     }
     func setupEmailTextField() {
