@@ -26,7 +26,6 @@ func setupTitleLabel() {
     }
     
     func setupEmailTextField() {
-        
         // Has border
         emailContainerView.layer.borderWidth = 1
         emailContainerView.layer.borderColor = UIColor(
@@ -57,6 +56,7 @@ func setupTitleLabel() {
                 alpha: 1)
         
     }
+    
     func setupPasswordTextField() {
         
         // Has border
@@ -99,6 +99,7 @@ func setupTitleLabel() {
         signInButton.setTitleColor(.white, for: UIControl.State.normal)
         
     }
+    
     func setupSignUpButton() {
         
         let attributedText = NSMutableAttributedString(

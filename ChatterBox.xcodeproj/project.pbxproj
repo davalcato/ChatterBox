@@ -20,6 +20,8 @@
 		7598D75C269B993300731D50 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D75B269B993300731D50 /* SignUpViewController+UI.swift */; };
 		7598D75E269F5ACC00731D50 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D75D269F5ACC00731D50 /* SignInViewController.swift */; };
 		7598D760269F5D7800731D50 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D75F269F5D7800731D50 /* SignInViewController+UI.swift */; };
+		7598D762269F66C700731D50 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */; };
+		7598D764269F66E300731D50 /* ForgotPassowordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		7598D75B269B993300731D50 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
 		7598D75D269F5ACC00731D50 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7598D75F269F5D7800731D50 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPassowordViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				7598D75D269F5ACC00731D50 /* SignInViewController.swift */,
 				7598D75F269F5D7800731D50 /* SignInViewController+UI.swift */,
 				7598D757269B7E7C00731D50 /* ViewController+UI.swift */,
+				7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */,
+				7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */,
 				755343FB269664B400709080 /* Assets.xcassets */,
 				755344202696691B00709080 /* Welcome.storyboard */,
 				755343FD269664B400709080 /* LaunchScreen.storyboard */,
@@ -271,11 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7598D764269F66E300731D50 /* ForgotPassowordViewController+UI.swift in Sources */,
 				7598D760269F5D7800731D50 /* SignInViewController+UI.swift in Sources */,
 				7598D75E269F5ACC00731D50 /* SignInViewController.swift in Sources */,
 				7598D75C269B993300731D50 /* SignUpViewController+UI.swift in Sources */,
 				755343F7269664B000709080 /* ViewController.swift in Sources */,
 				755343F3269664B000709080 /* AppDelegate.swift in Sources */,
+				7598D762269F66C700731D50 /* ForgotPasswordViewController.swift in Sources */,
 				7598D758269B7E7C00731D50 /* ViewController+UI.swift in Sources */,
 				755343F5269664B000709080 /* SceneDelegate.swift in Sources */,
 				7598D75A269B89B000731D50 /* SignUpViewController.swift in Sources */,
