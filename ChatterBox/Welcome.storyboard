@@ -222,6 +222,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
+                                <connections>
+                                    <segue destination="Al0-EZ-hzV" kind="show" id="zA8-hh-xME"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zDU-MO-C7m"/>
@@ -337,6 +340,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="Al0-EZ-hzV" eventType="touchUpInside" id="m3s-wc-h2F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsp-DX-JHz">
                                 <rect key="frame" x="20" y="837" width="374" height="40"/>
@@ -346,6 +352,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
+                                <connections>
+                                    <segue destination="vYC-81-qp5" kind="show" id="1Nm-b0-VfY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNJ-dt-VuS"/>
@@ -370,6 +379,7 @@
                             <constraint firstItem="7tz-Ga-5cp" firstAttribute="leading" secondItem="gNJ-dt-VuS" secondAttribute="leading" constant="20" id="yZf-gg-kR6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TLL-kd-yiH"/>
                     <connections>
                         <outlet property="emailContainerView" destination="aOz-Oy-lBd" id="8tx-UZ-5zn"/>
                         <outlet property="emailTextField" destination="7fO-9e-QfA" id="TgT-S7-uaS"/>
@@ -441,6 +451,7 @@
                             <constraint firstItem="5Kk-eS-w6N" firstAttribute="trailing" secondItem="4wO-tY-Avm" secondAttribute="trailing" constant="20" id="yWu-eG-dOy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3l1-Jn-VKr"/>
                     <connections>
                         <outlet property="emailContainerView" destination="eEp-Xi-tpY" id="CSo-i1-nlm"/>
                         <outlet property="emailTextField" destination="HNe-i2-H1n" id="nsr-uC-58g"/>
