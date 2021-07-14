@@ -1,17 +1,17 @@
 //
-//  SignUpViewController+UI.swift
+//  SignInViewController+UI.swift
 //  ChatterBox
 //
-//  Created by Daval Cato on 7/11/21.
+//  Created by Daval Cato on 7/14/21.
 //
 
 import UIKit
 
-extension SignUpViewController {
+extension SignInViewController {
     
-    func setupTitleLabel() {
+func setupTitleLabel() {
         
-        let title = "Sign Up"
+        let title = "Sign In"
         
         let attributedText = NSMutableAttributedString(
             string: title, attributes:
@@ -24,43 +24,7 @@ extension SignUpViewController {
         titleTextLabel.attributedText = attributedText
         
     }
-    func setupAvatar() {
-        // UI circular
-        avatar.layer.cornerRadius = 40
-        avatar.clipsToBounds = true
-        
-        
-    }
-    func setupFullNameTextField() {
-    // Has border
-        fullnameContainerView.layer.borderWidth = 1
-        fullnameContainerView.layer.borderColor = UIColor(
-            red: 210/255,
-            green: 210/255,
-            blue: 210/255,
-            alpha: 1).cgColor
-        fullnameContainerView.layer.cornerRadius = 3
-        fullnameContainerView.clipsToBounds = true
-        
-        fullnameTextField.borderStyle = .none
-        
-    // Name placeholder
-        let placeholderAttr = NSAttributedString(
-            string: "Full Name",
-            attributes: [NSAttributedString.Key.foregroundColor : UIColor(
-                red: 170/255,
-                green: 170/255,
-                blue: 170/255,
-                alpha: 1)])
-        
-        // attributedString
-        fullnameTextField.attributedPlaceholder = placeholderAttr
-        fullnameTextField.textColor = UIColor(
-            red: 99/255,
-            green:99/255,
-            blue: 99/255,
-            alpha: 1)
-    }
+    
     func setupEmailTextField() {
         
         // Has border
@@ -125,20 +89,20 @@ extension SignUpViewController {
                 alpha: 1)
         
     }
-    func setupSignUpButton() {
+    func setupSignInButton() {
         // Set signUpButton
-        signUpButton.setTitle("Sign Up", for: UIControl.State.normal)
-        signUpButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        signUpButton.layer.cornerRadius = 5
-        signUpButton.clipsToBounds = true
-        signUpButton.backgroundColor = .black
-        signUpButton.setTitleColor(.white, for: UIControl.State.normal)
+        signInButton.setTitle("Sign In", for: UIControl.State.normal)
+        signInButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        signInButton.layer.cornerRadius = 5
+        signInButton.clipsToBounds = true
+        signInButton.backgroundColor = .black
+        signInButton.setTitleColor(.white, for: UIControl.State.normal)
         
     }
-    func setupSignInButton() {
+    func setupSignUpButton() {
         
         let attributedText = NSMutableAttributedString(
-            string: "Already have an account? ",
+            string: "Don't have an account? ",
             attributes: [NSAttributedString.Key.font :
                             UIFont.systemFont(ofSize: 16),
                  NSAttributedString.Key.foregroundColor : UIColor(white: 0,
@@ -146,15 +110,17 @@ extension SignUpViewController {
                 ])
         
         let attributedSubText = NSMutableAttributedString(
-            string: "Sign In", attributes:
+            string: "Sign Up", attributes:
                 [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18),
                  NSAttributedString.Key.foregroundColor : UIColor.black
                  
                  ])
                  attributedText.append(attributedSubText)
-                 signInButton.setAttributedTitle(attributedText, for: .normal)
+                 signUpButton.setAttributedTitle(attributedText, for: .normal)
         
         }
 }
+
+
 
 
