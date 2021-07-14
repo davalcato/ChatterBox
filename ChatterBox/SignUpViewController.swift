@@ -36,5 +36,10 @@ class SignUpViewController: UIViewController {
         setupSignInButton()
         
     }
-   
+    @IBAction func dismissAction(_ sender: Any) {
+        // Push back to close X button
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
 }
