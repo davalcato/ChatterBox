@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -28,6 +29,8 @@ class SignUpViewController: UIViewController {
     }
     
     func setupUI() {
+        
+        
         setupTitleLabel()
         setupAvatar()
         setupFullNameTextField()
@@ -43,4 +46,21 @@ class SignUpViewController: UIViewController {
         
     }
     
+    @IBAction func signUpButton(_ sender: Any) {
+        // Firebase login
+        Auth.auth().createUser(
+            withEmail: "test1@gmail.com",
+            password: "123456") { (AuthDataResult, error) in
+            if error != nil {
+                
+                print(error!.localizedDescription)
+                return
+            }
+            // Check if error is nil
+            if let authData = AuthDataResult {
+                print(authData.user.email)
+                
+            }
+        }
+    }
 }
