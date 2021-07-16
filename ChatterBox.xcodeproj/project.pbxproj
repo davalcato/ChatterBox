@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05C209EC0C44B9B13275766A /* Pods_ChatterBox_ChatterBoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEEE965A2A539F6A9AD4E2C /* Pods_ChatterBox_ChatterBoxUITests.framework */; };
 		755343F3269664B000709080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755343F2269664B000709080 /* AppDelegate.swift */; };
 		755343F5269664B000709080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755343F4269664B000709080 /* SceneDelegate.swift */; };
 		755343F7269664B000709080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755343F6269664B000709080 /* ViewController.swift */; };
@@ -22,6 +23,9 @@
 		7598D760269F5D7800731D50 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D75F269F5D7800731D50 /* SignInViewController+UI.swift */; };
 		7598D762269F66C700731D50 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */; };
 		7598D764269F66E300731D50 /* ForgotPassowordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */; };
+		7598D766269F978200731D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7598D765269F978100731D50 /* GoogleService-Info.plist */; };
+		BDEF6F96C2CB28693D0011E9 /* Pods_ChatterBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37393CB84CA059C1B9550F66 /* Pods_ChatterBox.framework */; };
+		C2B2EF9E3EAEDF36F8F370DB /* Pods_ChatterBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD66F5A2326619EA2EAEF7A /* Pods_ChatterBoxTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022E8C5E128DE9F86FD04ACC /* Pods-ChatterBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBoxTests.release.xcconfig"; path = "Target Support Files/Pods-ChatterBoxTests/Pods-ChatterBoxTests.release.xcconfig"; sourceTree = "<group>"; };
+		0FEEE965A2A539F6A9AD4E2C /* Pods_ChatterBox_ChatterBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatterBox_ChatterBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C5DAA8982BBA8902DE1405 /* Pods-ChatterBoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBoxTests.debug.xcconfig"; path = "Target Support Files/Pods-ChatterBoxTests/Pods-ChatterBoxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37393CB84CA059C1B9550F66 /* Pods_ChatterBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatterBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E2725D9D2EAE6FF3E46DF8 /* Pods-ChatterBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBox.release.xcconfig"; path = "Target Support Files/Pods-ChatterBox/Pods-ChatterBox.release.xcconfig"; sourceTree = "<group>"; };
 		755343EF269664B000709080 /* ChatterBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatterBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755343F2269664B000709080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		755343F4269664B000709080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +70,11 @@
 		7598D75F269F5D7800731D50 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
 		7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPassowordViewController+UI.swift"; sourceTree = "<group>"; };
+		7598D765269F978100731D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8BD66F5A2326619EA2EAEF7A /* Pods_ChatterBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatterBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67703A54D7BEE9F286C016F /* Pods-ChatterBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBox.debug.xcconfig"; path = "Target Support Files/Pods-ChatterBox/Pods-ChatterBox.debug.xcconfig"; sourceTree = "<group>"; };
+		C18C8E00C4F9D66B4ED13FC9 /* Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChatterBox-ChatterBoxUITests/Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF403F51C977E3DF76153F6 /* Pods-ChatterBox-ChatterBoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBox-ChatterBoxUITests.release.xcconfig"; path = "Target Support Files/Pods-ChatterBox-ChatterBoxUITests/Pods-ChatterBox-ChatterBoxUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDEF6F96C2CB28693D0011E9 /* Pods_ChatterBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B2EF9E3EAEDF36F8F370DB /* Pods_ChatterBoxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C209EC0C44B9B13275766A /* Pods_ChatterBox_ChatterBoxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5478C0D5A2E201319AF18EA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37393CB84CA059C1B9550F66 /* Pods_ChatterBox.framework */,
+				0FEEE965A2A539F6A9AD4E2C /* Pods_ChatterBox_ChatterBoxUITests.framework */,
+				8BD66F5A2326619EA2EAEF7A /* Pods_ChatterBoxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		755343E6269664B000709080 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +122,8 @@
 				75534408269664B500709080 /* ChatterBoxTests */,
 				75534412269664B500709080 /* ChatterBoxUITests */,
 				755343F0269664B000709080 /* Products */,
+				BB58C449862F3B7D57D9703D /* Pods */,
+				5478C0D5A2E201319AF18EA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			wrapsLines = 0;
@@ -126,6 +155,7 @@
 				755344202696691B00709080 /* Welcome.storyboard */,
 				755343FD269664B400709080 /* LaunchScreen.storyboard */,
 				75534400269664B400709080 /* Info.plist */,
+				7598D765269F978100731D50 /* GoogleService-Info.plist */,
 			);
 			path = ChatterBox;
 			sourceTree = "<group>";
@@ -146,6 +176,20 @@
 			path = ChatterBoxUITests;
 			sourceTree = "<group>";
 		};
+		BB58C449862F3B7D57D9703D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A67703A54D7BEE9F286C016F /* Pods-ChatterBox.debug.xcconfig */,
+				62E2725D9D2EAE6FF3E46DF8 /* Pods-ChatterBox.release.xcconfig */,
+				C18C8E00C4F9D66B4ED13FC9 /* Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig */,
+				CEF403F51C977E3DF76153F6 /* Pods-ChatterBox-ChatterBoxUITests.release.xcconfig */,
+				25C5DAA8982BBA8902DE1405 /* Pods-ChatterBoxTests.debug.xcconfig */,
+				022E8C5E128DE9F86FD04ACC /* Pods-ChatterBoxTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75534417269664B500709080 /* Build configuration list for PBXNativeTarget "ChatterBox" */;
 			buildPhases = (
+				B20C20A6FC5032E5C94992DE /* [CP] Check Pods Manifest.lock */,
 				755343EB269664B000709080 /* Sources */,
 				755343EC269664B000709080 /* Frameworks */,
 				755343ED269664B000709080 /* Resources */,
+				61D6C7AD709D93D77A5B246D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7553441A269664B500709080 /* Build configuration list for PBXNativeTarget "ChatterBoxTests" */;
 			buildPhases = (
+				E8EBB8608296BF1D964059EE /* [CP] Check Pods Manifest.lock */,
 				75534401269664B500709080 /* Sources */,
 				75534402269664B500709080 /* Frameworks */,
 				75534403269664B500709080 /* Resources */,
@@ -188,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7553441D269664B500709080 /* Build configuration list for PBXNativeTarget "ChatterBoxUITests" */;
 			buildPhases = (
+				3BA0D5DADA3EB01E98061D01 /* [CP] Check Pods Manifest.lock */,
 				7553440B269664B500709080 /* Sources */,
 				7553440C269664B500709080 /* Frameworks */,
 				7553440D269664B500709080 /* Resources */,
+				C9C06D6F5DDF4AE3F64C4A60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755343FF269664B400709080 /* LaunchScreen.storyboard in Resources */,
+				7598D766269F978200731D50 /* GoogleService-Info.plist in Resources */,
 				755344212696691B00709080 /* Welcome.storyboard in Resources */,
 				755343FC269664B400709080 /* Assets.xcassets in Resources */,
 			);
@@ -271,6 +321,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BA0D5DADA3EB01E98061D01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatterBox-ChatterBoxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61D6C7AD709D93D77A5B246D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatterBox/Pods-ChatterBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatterBox/Pods-ChatterBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatterBox/Pods-ChatterBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B20C20A6FC5032E5C94992DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatterBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C06D6F5DDF4AE3F64C4A60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatterBox-ChatterBoxUITests/Pods-ChatterBox-ChatterBoxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatterBox-ChatterBoxUITests/Pods-ChatterBox-ChatterBoxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatterBox-ChatterBoxUITests/Pods-ChatterBox-ChatterBoxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8EBB8608296BF1D964059EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatterBoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		755343EB269664B000709080 /* Sources */ = {
@@ -451,6 +604,7 @@
 		};
 		75534418269664B500709080 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67703A54D7BEE9F286C016F /* Pods-ChatterBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,6 +636,7 @@
 		};
 		75534419269664B500709080 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E2725D9D2EAE6FF3E46DF8 /* Pods-ChatterBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -513,6 +668,7 @@
 		};
 		7553441B269664B500709080 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C5DAA8982BBA8902DE1405 /* Pods-ChatterBoxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +694,7 @@
 		};
 		7553441C269664B500709080 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022E8C5E128DE9F86FD04ACC /* Pods-ChatterBoxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +720,7 @@
 		};
 		7553441E269664B500709080 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18C8E00C4F9D66B4ED13FC9 /* Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +744,7 @@
 		};
 		7553441F269664B500709080 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF403F51C977E3DF76153F6 /* Pods-ChatterBox-ChatterBoxUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

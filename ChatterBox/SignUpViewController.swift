@@ -26,6 +26,7 @@ class SignUpViewController: UIViewController {
         setupUI()
         
     }
+    
     func setupUI() {
         setupTitleLabel()
         setupAvatar()

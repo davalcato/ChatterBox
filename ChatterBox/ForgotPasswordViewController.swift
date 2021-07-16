@@ -2,6 +2,8 @@
 //  ForgotPasswordViewController.swift
 //  ChatterBox
 //
+
+//  rickholmes544@gmail.com / Firebase
 //  Created by Daval Cato on 7/14/21.
 //
 
@@ -25,6 +27,9 @@ class ForgotPasswordViewController: UIViewController {
         setupResetButton()
         
     }
- 
-
+    @IBAction func dismissAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
 }
