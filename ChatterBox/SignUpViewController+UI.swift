@@ -172,7 +172,12 @@ extension SignUpViewController {
                  ])
                  attributedText.append(attributedSubText)
                  signInButton.setAttributedTitle(attributedText, for: .normal)
-        }
+    }
+    
+    // Touches Ended
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
 
 // Update Avatar when users tap on photo in picker
