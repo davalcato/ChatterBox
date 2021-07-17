@@ -54,7 +54,22 @@ class SignUpViewController: UIViewController {
         
     }
     
+    func validateFields() {
+        // textFields should not be empty
+        guard let username = self.fullnameTextField.text, !username.isEmpty else {
+            print("Please enter an username")
+            
+            return
+        }
+        
+    }
+    
     @IBAction func signUpButtonDidTapped(_ sender: Any) {
+        // Dismiss keyboard
+        self.view.endEditing(true)
+        // Make app more robust
+        self.validateFields()
+        
         // Send the selected image to Firebase
         guard let imageSelected = self.image else {
             // Assign variable
