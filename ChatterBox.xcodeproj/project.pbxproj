@@ -24,6 +24,7 @@
 		7598D762269F66C700731D50 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */; };
 		7598D764269F66E300731D50 /* ForgotPassowordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */; };
 		7598D766269F978200731D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7598D765269F978100731D50 /* GoogleService-Info.plist */; };
+		75D4883026A34FF90096FD9E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D759269B89B000731D50 /* SignUpViewController.swift */; };
 		BDEF6F96C2CB28693D0011E9 /* Pods_ChatterBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37393CB84CA059C1B9550F66 /* Pods_ChatterBox.framework */; };
 		C2B2EF9E3EAEDF36F8F370DB /* Pods_ChatterBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD66F5A2326619EA2EAEF7A /* Pods_ChatterBoxTests.framework */; };
 /* End PBXBuildFile section */
@@ -186,7 +187,6 @@
 				25C5DAA8982BBA8902DE1405 /* Pods-ChatterBoxTests.debug.xcconfig */,
 				022E8C5E128DE9F86FD04ACC /* Pods-ChatterBoxTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -455,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D4883026A34FF90096FD9E /* SignUpViewController.swift in Sources */,
 				75534414269664B500709080 /* ChatterBoxUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

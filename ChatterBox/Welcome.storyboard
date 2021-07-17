@@ -215,7 +215,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                 <connections>
-                                    <action selector="signUpButton:" destination="IQE-wc-jR3" eventType="touchUpInside" id="FLp-Rj-Sgt"/>
+                                    <action selector="signUpButtonDidTapped:" destination="IQE-wc-jR3" eventType="touchUpInside" id="bX7-FN-E7V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oY-8Y-4L2">
@@ -266,7 +266,7 @@
                         <outlet property="passwordContainerView" destination="hEV-nB-6zS" id="KEK-Et-RQj"/>
                         <outlet property="passwordTextField" destination="OKu-A1-SqV" id="pwK-tA-ST1"/>
                         <outlet property="signInButton" destination="3oY-8Y-4L2" id="6jn-QE-jWX"/>
-                        <outlet property="signUpButton" destination="1Mi-fi-iO5" id="XfM-3x-x9x"/>
+                        <outlet property="signUpButton" destination="1Mi-fi-iO5" id="xQ1-6C-CwB"/>
                         <outlet property="titleTextLabel" destination="EHI-Vs-Nrf" id="hBa-1l-DJW"/>
                     </connections>
                 </viewController>

@@ -19,8 +19,6 @@ extension SignUpViewController {
                  NSAttributedString.Key.foregroundColor : UIColor.black
                 ])
         
-     
-        
         titleTextLabel.attributedText = attributedText
         
     }
@@ -175,21 +173,28 @@ extension SignUpViewController {
                  attributedText.append(attributedSubText)
                  signInButton.setAttributedTitle(attributedText, for: .normal)
         }
-    
 }
 
 // Update Avatar when users tap on photo in picker
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // Controller can get access to photos
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo
+                               info: [UIImagePickerController.InfoKey : Any]) {
     // Display photo on the uiimageview
         if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as?
             UIImage {
+            // Assign picked photo once user select photo
+            image = imageSelected
+            // Edited image key
             avatar.image = imageSelected
         }
         // Assign selected photo for avatar (original image)
         if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as?
             UIImage {
+            // Pnoto selected via this dictionary
+            image = imageOriginal
+            
             avatar.image = imageOriginal
         }
         // Dismiss picker
