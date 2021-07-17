@@ -9,6 +9,8 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
+import ProgressHUD
+
 
 
 class SignUpViewController: UIViewController {
@@ -57,8 +59,16 @@ class SignUpViewController: UIViewController {
     func validateFields() {
         // textFields should not be empty
         guard let username = self.fullnameTextField.text, !username.isEmpty else {
-            print("Please enter an username")
-            
+//            print()
+            ProgressHUD.showError("Please enter an username")
+            return
+        }
+        guard let email = self.emailTextField.text, !username.isEmpty else {
+            ProgressHUD.showError("Please enter an email address")
+            return
+        }
+        guard let password = self.passwordTextField.text, !username.isEmpty else {
+            ProgressHUD.showError("Please enter an password")
             return
         }
         
@@ -73,8 +83,8 @@ class SignUpViewController: UIViewController {
         // Send the selected image to Firebase
         guard let imageSelected = self.image else {
             // Assign variable
-            print("Avatar is nil")
-            
+//            print("Avatar is nil")
+            ProgressHUD.showError("Please choose your profile image")
             // Access value
             return
         }
@@ -87,11 +97,11 @@ class SignUpViewController: UIViewController {
         
         // Firebase login
         Auth.auth().createUser(
-            withEmail: "test12@gmail.com",
-            password: "123456") { (authDataResult, error) in
+            withEmail: self.emailTextField.text!,
+            password: self.passwordTextField.text!) { (authDataResult, error) in
             if error != nil {
-                
-                print(error!.localizedDescription)
+//                print(error!.localizedDescription)
+                ProgressHUD.showError(error!.localizedDescription)
                 return
             }
             // Dictionary to hold users data
@@ -101,6 +111,8 @@ class SignUpViewController: UIViewController {
                 var dict: Dictionary<String, Any> = [
                     "uid": authData.user.uid,
                     "email": authData.user.email as Any,
+                    // Append to the dictionary
+                    "username": self.fullnameTextField.text as Any,
                     "profileImageUrl": "",
                     "status": "Welcome to ChatterBox"
                 ]
@@ -119,7 +131,7 @@ class SignUpViewController: UIViewController {
                                           metadata: metadata)
                     { (storageMetaData, error) in
                     if error != nil {
-                        print(error?.localizedDescription)
+                        print(error?.localizedDescription as Any)
                         // If yes then return to function
                         return
                     }
