@@ -43,6 +43,11 @@ extension SignUpViewController {
         let picker = UIImagePickerController()
         // Photo library type
         picker.sourceType = .photoLibrary
+        // Configuration for the picker
+        picker.allowsEditing = true
+        // Assign delegate controller to enable methods
+        picker.delegate = self
+        
         self.present(picker, animated: true, completion: nil)
         
     }
@@ -169,8 +174,26 @@ extension SignUpViewController {
                  ])
                  attributedText.append(attributedSubText)
                  signInButton.setAttributedTitle(attributedText, for: .normal)
-        
         }
+    
 }
 
+// Update Avatar when users tap on photo in picker
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    // Controller can get access to photos
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    // Display photo on the uiimageview
+        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as?
+            UIImage {
+            avatar.image = imageSelected
+        }
+        // Assign selected photo for avatar (original image)
+        if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as?
+            UIImage {
+            avatar.image = imageOriginal
+        }
+        // Dismiss picker
+        picker.dismiss(animated: true, completion: nil)
+    }
+}
 
