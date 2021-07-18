@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import ProgressHUD
+
+
 
 extension SignUpViewController {
     
@@ -177,6 +180,44 @@ extension SignUpViewController {
     // Touches Ended
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func validateFields() {
+        // textFields should not be empty
+        guard let username = self.fullnameTextField.text, !username.isEmpty else {
+//            print()
+            ProgressHUD.showError(ERROR_EMPTY_USERNAME)
+            return
+        }
+        guard let email = self.emailTextField.text, !username.isEmpty else {
+            ProgressHUD.showError(ERROR_EMPTY_EMAIL)
+            return
+        }
+        guard let password = self.passwordTextField.text, !username.isEmpty else {
+            ProgressHUD.showError(ERROR_EMPTY_PASSWORD)
+            return
+        }
+        
+    }
+    // Handler business logic after signup
+    func signUp(onSuccess: @escaping() -> Void,
+                onError: @escaping(_ errorMessage: String) -> Void) {
+        // Show an alert when tap on signUp button
+        ProgressHUD.show()
+       // Call API
+        API.User.signUp(
+            withUsername: self.fullnameTextField.text!,
+            email: self.emailTextField.text!,
+            password: self.passwordTextField.text!,
+            image: self.image,
+            onSuccess: {
+            // dismiss when done
+            ProgressHUD.dismiss()
+            
+            onSuccess()
+        }) { (errorMessage) in
+            onError(errorMessage)
+        }
     }
 }
 

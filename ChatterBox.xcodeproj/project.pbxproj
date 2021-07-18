@@ -25,6 +25,10 @@
 		7598D764269F66E300731D50 /* ForgotPassowordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */; };
 		7598D766269F978200731D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7598D765269F978100731D50 /* GoogleService-Info.plist */; };
 		75D4883026A34FF90096FD9E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598D759269B89B000731D50 /* SignUpViewController.swift */; };
+		75D4883226A47D490096FD9E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4883126A47D490096FD9E /* API.swift */; };
+		75D4883426A47E8C0096FD9E /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4883326A47E8C0096FD9E /* UserAPI.swift */; };
+		75D4883926A4900B0096FD9E /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4883826A4900B0096FD9E /* StorageService.swift */; };
+		75D4883B26A4A0310096FD9E /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4883A26A4A0310096FD9E /* Ref.swift */; };
 		BDEF6F96C2CB28693D0011E9 /* Pods_ChatterBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37393CB84CA059C1B9550F66 /* Pods_ChatterBox.framework */; };
 		C2B2EF9E3EAEDF36F8F370DB /* Pods_ChatterBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD66F5A2326619EA2EAEF7A /* Pods_ChatterBoxTests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +76,10 @@
 		7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPassowordViewController+UI.swift"; sourceTree = "<group>"; };
 		7598D765269F978100731D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75D4883126A47D490096FD9E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		75D4883326A47E8C0096FD9E /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		75D4883826A4900B0096FD9E /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		75D4883A26A4A0310096FD9E /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
 		8BD66F5A2326619EA2EAEF7A /* Pods_ChatterBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatterBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67703A54D7BEE9F286C016F /* Pods-ChatterBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBox.debug.xcconfig"; path = "Target Support Files/Pods-ChatterBox/Pods-ChatterBox.debug.xcconfig"; sourceTree = "<group>"; };
 		C18C8E00C4F9D66B4ED13FC9 /* Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChatterBox-ChatterBoxUITests/Pods-ChatterBox-ChatterBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,16 +150,14 @@
 		755343F1269664B000709080 /* ChatterBox */ = {
 			isa = PBXGroup;
 			children = (
+				75D4883626A48D460096FD9E /* Controllers */,
+				75D4883526A48D2A0096FD9E /* Api */,
+				75D4883726A48DB80096FD9E /* Controller+UI */,
 				755343F2269664B000709080 /* AppDelegate.swift */,
 				755343F4269664B000709080 /* SceneDelegate.swift */,
-				755343F6269664B000709080 /* ViewController.swift */,
-				7598D759269B89B000731D50 /* SignUpViewController.swift */,
-				7598D75B269B993300731D50 /* SignUpViewController+UI.swift */,
-				7598D75D269F5ACC00731D50 /* SignInViewController.swift */,
-				7598D75F269F5D7800731D50 /* SignInViewController+UI.swift */,
-				7598D757269B7E7C00731D50 /* ViewController+UI.swift */,
 				7598D761269F66C700731D50 /* ForgotPasswordViewController.swift */,
 				7598D763269F66E300731D50 /* ForgotPassowordViewController+UI.swift */,
+				75D4883A26A4A0310096FD9E /* Ref.swift */,
 				755343FB269664B400709080 /* Assets.xcassets */,
 				755344202696691B00709080 /* Welcome.storyboard */,
 				755343FD269664B400709080 /* LaunchScreen.storyboard */,
@@ -175,6 +181,36 @@
 				75534413269664B500709080 /* ChatterBoxUITests.swift */,
 			);
 			path = ChatterBoxUITests;
+			sourceTree = "<group>";
+		};
+		75D4883526A48D2A0096FD9E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				75D4883326A47E8C0096FD9E /* UserAPI.swift */,
+				75D4883126A47D490096FD9E /* API.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		75D4883626A48D460096FD9E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				755343F6269664B000709080 /* ViewController.swift */,
+				7598D759269B89B000731D50 /* SignUpViewController.swift */,
+				7598D75D269F5ACC00731D50 /* SignInViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		75D4883726A48DB80096FD9E /* Controller+UI */ = {
+			isa = PBXGroup;
+			children = (
+				7598D75B269B993300731D50 /* SignUpViewController+UI.swift */,
+				7598D75F269F5D7800731D50 /* SignInViewController+UI.swift */,
+				7598D757269B7E7C00731D50 /* ViewController+UI.swift */,
+				75D4883826A4900B0096FD9E /* StorageService.swift */,
+			);
+			path = "Controller+UI";
 			sourceTree = "<group>";
 		};
 		BB58C449862F3B7D57D9703D /* Pods */ = {
@@ -430,11 +466,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D4883226A47D490096FD9E /* API.swift in Sources */,
+				75D4883B26A4A0310096FD9E /* Ref.swift in Sources */,
 				7598D764269F66E300731D50 /* ForgotPassowordViewController+UI.swift in Sources */,
 				7598D760269F5D7800731D50 /* SignInViewController+UI.swift in Sources */,
 				7598D75E269F5ACC00731D50 /* SignInViewController.swift in Sources */,
 				7598D75C269B993300731D50 /* SignUpViewController+UI.swift in Sources */,
+				75D4883426A47E8C0096FD9E /* UserAPI.swift in Sources */,
 				755343F7269664B000709080 /* ViewController.swift in Sources */,
+				75D4883926A4900B0096FD9E /* StorageService.swift in Sources */,
 				755343F3269664B000709080 /* AppDelegate.swift in Sources */,
 				7598D762269F66C700731D50 /* ForgotPasswordViewController.swift in Sources */,
 				7598D758269B7E7C00731D50 /* ViewController+UI.swift in Sources */,
