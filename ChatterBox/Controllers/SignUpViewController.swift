@@ -69,4 +69,5 @@ class SignUpViewController: UIViewController {
         // Send the selected image to Firebase
         
     }
+    
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class SignInViewController: UIViewController {
 
@@ -38,5 +39,19 @@ class SignInViewController: UIViewController {
         navigationController?.popViewController(animated: true)
         
     }
-    
+    @IBAction func signInButtonDidTapped(_ sender: Any) {
+        self.view.endEditing(true)
+        // Make app more robust
+        self.validateFields()
+        // Factor code into smaller units
+        self.signIn(onSuccess: {
+            // Switch view
+            
+        }) { (errorMessage) in
+            ProgressHUD.showError(errorMessage)
+        }
+        // Send the selected image to Firebase
+        
+    }
 }
+   

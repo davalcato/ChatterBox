@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 extension SignInViewController {
     
@@ -18,9 +19,7 @@ func setupTitleLabel() {
                 [NSAttributedString.Key.font : UIFont.init(name: "Didot", size: 28)!,
                  NSAttributedString.Key.foregroundColor : UIColor.black
                 ])
-        
-     
-        
+    
         titleTextLabel.attributedText = attributedText
         
     }
@@ -119,7 +118,36 @@ func setupTitleLabel() {
                  attributedText.append(attributedSubText)
                  signUpButton.setAttributedTitle(attributedText, for: .normal)
         
+    }
+    func validateFields() {
+        
+        guard let email = self.emailTextField.text, !email.isEmpty else {
+            ProgressHUD.showError(ERROR_EMPTY_EMAIL)
+            return
         }
+        guard let password = self.passwordTextField.text, !password.isEmpty else {
+            ProgressHUD.showError(ERROR_EMPTY_PASSWORD)
+            return
+        }
+        
+    }
+    // Handler business logic after signup
+    func signIn(onSuccess: @escaping() -> Void,
+                onError: @escaping(_ errorMessage: String) -> Void) {
+        // Show an alert when tap on signUp button
+        ProgressHUD.show()
+       // Call API
+        API.User.signIn(
+            email: self.emailTextField.text!,
+            password: self.passwordTextField.text!,
+            onSuccess: {
+            ProgressHUD.dismiss()
+            onSuccess()
+            
+        }) { (errorMessage) in
+            onError(errorMessage)
+        }
+    }
 }
 
 

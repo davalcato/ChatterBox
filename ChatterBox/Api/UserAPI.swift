@@ -13,6 +13,29 @@ import FirebaseStorage
 
 
 class UserAPI {
+    
+    // Built in signIn features
+    func signIn(email: String,
+                password: String,
+                onSuccess: @escaping() -> Void,
+                onError: @escaping(_ errorMessage: String) -> Void) {
+        Auth.auth().signIn(
+            withEmail: email,
+            password: password) { (authData, error) in
+            // Or to the return error
+            if error != nil {
+                // If auth fails
+                onError(error!.localizedDescription)
+                return
+            }
+            // Print out ID of user
+            print(authData?.user.uid)
+            
+            
+            onSuccess()
+        }
+    }
+    
     // Pass UIImage from the controller
     func signUp(
         withUsername username: String,

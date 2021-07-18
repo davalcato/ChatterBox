@@ -335,6 +335,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInButtonDidTapped:" destination="Al0-EZ-hzV" eventType="touchUpInside" id="5dm-bM-axA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbt-g1-hHd">
                                 <rect key="frame" x="20" y="385" width="374" height="30"/>
