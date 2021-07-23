@@ -8,6 +8,8 @@
 //
 
 import UIKit
+import ProgressHUD
+
 
 class ForgotPasswordViewController: UIViewController {
     
@@ -29,6 +31,30 @@ class ForgotPasswordViewController: UIViewController {
     }
     @IBAction func dismissAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+        
+    }
+    @IBAction func resetPasswordDidTapped(_ sender: Any) {
+        // If empty string display alert
+        guard let email = emailTextField.text, email != "" else {
+            // Describes the error
+            ProgressHUD.showError(ERROR_EMPTY_EMAIL_RESET)
+            // Call return if email is empty
+            return
+        }
+        // Call reset password in the forgot controller
+        API.User.resetPassword(
+            email: email,
+            onSuccess: {
+            // Dismis keyboard
+            self.view.endEditing(true)
+            // If it is a success
+            ProgressHUD.showSucceed(SUCCESS_EMAIL_RESET)
+            // App navigates back to the controller
+            self.navigationController?.popViewController(animated: true)
+        }) { (errorMessage) in
+            // Otherwise if an error occurs show
+            ProgressHUD.showError(errorMessage)
+        }
         
     }
     

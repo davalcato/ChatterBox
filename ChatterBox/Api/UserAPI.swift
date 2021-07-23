@@ -103,6 +103,24 @@ class UserAPI {
             }
         }
     }
+    // Reset password method
+    func resetPassword(email: String, onSuccess: @escaping() -> Void,
+                       onError: @escaping(_ errorMessage: String) -> Void) {
+        
+        // Call send password reset method
+        Auth.auth().sendPasswordReset(
+            withEmail: email) { (error) in
+            // Display an alert prompt showing error or success
+            if error == nil {
+                // After send pass reset method
+                onSuccess()
+                // If successful user check inbox then nevigate to signIn view
+            } else {
+                onError(error!.localizedDescription)
+                
+            }
+        }
+    }
 }
 
 

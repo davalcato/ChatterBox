@@ -445,6 +445,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reset my Password"/>
+                                <connections>
+                                    <action selector="resetPasswordDidTapped:" destination="vYC-81-qp5" eventType="touchUpInside" id="pd8-Mh-71e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Kk-eS-w6N"/>
